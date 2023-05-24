@@ -1,5 +1,6 @@
 package com.mahdi.introducingmyself
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -11,7 +12,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONArray
 import org.json.JSONObject
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private val mHandler = Handler()
@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         initializeButtons()
     }
 
+    @SuppressLint("DiscouragedApi")
     private fun initialTextViewsIntroduction() {
         val textViewH1 = findViewById<TextView>(R.id.textViewF1)
         val textViewT1 = findViewById<TextView>(R.id.textViewF1T)
@@ -93,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initializeTextViewName() {
         val textViewName = findViewById<TextView>(R.id.textView1)
-        val myName = "Mahid Davoodzadehdsfgdfsgdfgsdfg"
+        val myName = "Mahid Davoodzadehd"
         var myNameForTextView = ""
         var counter = 0
         for (element in myName) {
