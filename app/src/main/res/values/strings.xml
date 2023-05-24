@@ -3,4 +3,5 @@
     <string name="my_name">Mahdi Davoodzadeh</string>
     <string name="button1">Contact</string>
     <string name="button2">Email</string>
+    <string name="night_mode">Night mode</string>
 </resources>

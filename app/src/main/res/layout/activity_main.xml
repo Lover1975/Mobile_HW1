@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/layout_scroll"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_constraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".MainActivity">
@@ -27,12 +29,15 @@
                 app:cardCornerRadius="250dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/my_picture"
-                    tools:ignore="ContentDescription" />
-
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:srcCompat="@drawable/download" />
             </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
@@ -186,6 +191,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewT3T"
             app:layout_constraintVertical_bias="0.274" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="#fff"
+            android:layout_width="90dp"
+            android:background="@drawable/night_mode"
+            android:layout_height="wrap_content"
+            android:text="@string/night_mode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.926"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintVertical_bias="0.084" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

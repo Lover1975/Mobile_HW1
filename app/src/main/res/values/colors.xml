@@ -16,5 +16,6 @@
     <color name="H3">#4c5b1a </color>
     <color name="H4">#ffff0000</color>
     <color name="H5">#ff888888</color>
+    <color name="H6">#fff</color>
 
     </resources>
